@@ -1,0 +1,30 @@
+(For best viewing experience, widen the window to prevent text wrapping)
+
+column name	type		meaning
+
+id		integer		unique number assigned to each observation
+collector	factor		initials of team member who collected this observation [AL, AG, GR, MC, WJ]
+account		string		username of poster (poster refers to the account that made the post)
+likes		integer		number of likes
+views		integer		number of views (-1 if not a video or view count not visible)
+comments	integer		number of comments
+posts		integer		number of posts by poster
+followers	integer		number of followers of poster
+following	integer		number of accounts followed by poster
+tags		integer		number of unique other accounts tagged (duplicates or self-tags excluded)
+mentions	integer		number of other accounts mentioned in caption
+hashes		integer		number of hashtags in caption
+caption		string		full text of caption
+location	factor		whether a location is tagged [yes, no]
+photos		integer		number of photos included in the post
+videos		integer		number of videos included in the post
+cover		factor		whether the cover frame is a photo or video (cover frame refers to the first frame of the post) [photo, video]
+sound		factor		whether the cover frame includes sound (na if cover frame is not video) [yes, no, na]
+emoji		factor		whether the caption includes at least one emoji [yes, no]
+gender		factor		apparent gender of poster (na if poster is not an individual) [male, female, unclear, na]
+age		integer		age of post in days
+verified	factor		whether the poster verified (verified accounts display a checkmark next to their usernames) [yes, no]
+aspect		factor		apparent aspect ratio of cover frame [tall, wide, square]
+people		integer		number of people depicted in the cover frame (other frames not considered)
+self		factor		whether the cover frame depicts the poster account holder (na if poster is not an individual) [yes, no, na]
+personal	factor		whether the poster is a personal account (as opposed to a corporate or brand account) [yes, no]
